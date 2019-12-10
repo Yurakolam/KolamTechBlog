@@ -1,0 +1,224 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: dimgray;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bfb1b0;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: rgb(231, 221, 221);
+    line-height: 1.6;
+    background-color: black;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+
+/*---- Container ----*/
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+
+/*---- Intro ----*/
+
+.intro {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/disconnected_blured.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__title {
+    color: #fff;
+    font-size: 150px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 500px;
+    height: 5px;
+    margin: 20px auto 0;
+    background-color: #fff;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.suptitle {
+    font-size: 100px;
+    margin-top: 50px;
+    font-family: 'Iceland', cursive;
+    color: #fff;
+    text-align: center;
+}
+
+.suptitle:after {
+    content: "";
+    display: block;
+    width: 850px;
+    height: 5px;
+    margin: 0px auto 0px;
+    background-color: #fff;
+}
+
+.title {
+    margin-top: 25px;
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    line-height: 1;
+}
+
+.contacts {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 8%;
+}
+
+.photo {
+    height: 48px;
+    width: 48px;
+    margin: 0.7%;
+    position: absolute;
+}
+
+
+/*---- Header ----*/
+
+.header {
+    padding-top: 7px;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header__logo {
+    font-family: 'Share Tech Mono', monospace;
+    margin-left: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header__logo:hover {
+    color: aqua;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 20px;
+}
+
+
+/*---- Nav ----*/
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    transition: color .1s linear;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+}
+
+.nav__link:hover {
+    color: aqua;
+}
+
+.nav__link:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: aqua;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover:after {
+    opacity: 1;
+}
+
+
+/*------FOOTER-----*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+}
